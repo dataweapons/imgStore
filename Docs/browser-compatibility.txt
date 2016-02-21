@@ -1,26 +1,28 @@
 /* Guidance Concerning Web-based DICOM Clients | version 1 | proprietary, authorized use only /*
 
 /* GENERAL THEORY /*
-[01] currently, compatibility is dictated by a browsers support for two specific functions related to the DICOM standard:
-     + architecture must be, or have native support for, 32bit architectures,
-     + support for JPEG2000a image compression,
+[01] currently, compatibility is dictated by a browsers support for these specific functions related to the DICOM standard:
+     + system must be on, or have native support for, 32bit architectures, x86 byte ode,
+     + support for JPEG2000a image compression,                                            <----CRITICAL!!!
      + support for security zones based on data-types and authorizations,
-     + support for 32bit JVM code execution.
+     + support for 32bit Java JVM code execution.
 
-[02] in the near-term, in addition to the two factors listed above, a browser will also need to support the following:
+[02] in the near-term, in addition to the factors listed above, a browser will also need to support the following:
      + TLS1.2 based end-point encryption,
      + native support for WADO,
      + native support for HTML5,
      + PKCS12 client/server encryption.
 
 [03] to users, image compression applies algorithms to present the underlying image data in a way that minimizes the
-     resources necessary to stream and allows users to view high quality greyscale images while not reducing the quality
-     or accuracy of it, specifically as it pertains to the difference in pixel colorations in greyscale.
+     resources necessary to store and access it while still allowing users to view high quality greyscale images
+     while not reducing the quality or accuracy of it, specifically as it pertains to the difference in pixel colorations 
+     in greyscale.
 
 [04] on the backend, JPEG2000 is fundamental to longterm archiving and data interchange.
 
 [05] DICOM software must be release with a DICOM Comformance Statement to ensure interoperability between different
-     vendor implementations of DICOM.  If this document references JPEG2000 as all do, then JPEG2000 must be supported.
+     vendor implementations of DICOM.  If this document references JPEG2000 as all do - usually in sections concerned
+     with lossless storage, pixel conversion, and data interchange - then JPEG2000 must be supported.
      + while some use PNG, GIF, or even proprietary encoding, none of these implementations meet the standards for
        healthcare delivery.
 
@@ -34,13 +36,15 @@
 
 [06] DICOM operates at a low-level, encoding metadata into DICOM files that dictate how it should be processed.  In 
      practice DICOM is implemented in Java for obvious reasons, chief among them is the separation of logic from the
-     underlying hardware that it runs on.  Therefore, any DICOM software is heavily dependent on the specific version
-     Of Java that it was compiled to run on, oftentimes down to the specific release versions.
+     underlying hardware that it runs on.  Therefore, any DICOM software running on PC's is heavily dependent on the
+     specific version of Java that it was compiled to run on, oftentimes down to the specific release versions used by
+     developers who compiled the final build for release,
 
-[07] DICOM, being primarily a data storage and encoding protocol, relies on systems external to it to operate properly.
-     For example, while DICOM3 implements DICOM-TLS as a standard, it only defines the standards, leaving to others to decide
-     how best to implement it.  Other than the encryption algorithm, things like specific PKI software, the bit values used, etc
-     are left undefined.
+[07] DICOM, being primarily a data storage and encoding protocol, relies on systems external to it as well as its own standards to 
+     operate properly.  For example, while DICOM3 implements DICOM-TLS as a standard, it only defines the standards, leaving to 
+     others to decide how best to implement it.  Other than the encryption algorithm, things like specific PKI software, 
+     the bit values used, etc are left undefined, as PKI is foundational to encryption such as in web sessions, etc and
+     since there can only be one PKI authorized for any given entity, everything that uses it must agree on the parameters it sets.
 
 [08] medical imaging is an industry who defines their own standards through NEMA.  Naturally, some members of that body have
      more influence then others.  GE, Varian, Phillips, FujiFilms, and Kodak, having an outsized share of the market, are
