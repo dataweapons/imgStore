@@ -37,14 +37,25 @@ https://www.varian.com/oncology/service-education/interoperability/dicom-conform
 https://www.varian.com/sites/default/files/resource_attachments/TreatmentDaemon_88_89.pdf
 https://www.varian.com/sites/default/files/resource_attachments/Varian_TrueBeamImaging_v2.5_DICOMConformanceStatement.pdf
 
+Varian/velocity: "IHE-RO Integration Statement"
+http://www.velocitymedical.com/wp-content/uploads/2014/02/IHE-ROIntegrationStatement.pdf
+
+MIM Software: a marketing reference to MIM IHE-RO Integration Statement
+http://www.mimsoftware.com/products/maestro/
+
 GE: "Radiology PACS & RIS DICOM Conformance Statements"
 http://www3.gehealthcare.com/en/Products/Interoperability/DICOM/Radiology_PACS_and_RIS_Conformance_Statements
+
+http://www.visionrt.com/sites/default/files/DICOM%20Conformance%20Statement%20Issue%201%203%2030-Apr-2010.pdf
 
    ===========================
 /* IMGSTORE Specific Resources /*
    ===========================
 Oracle: Advanced Imaging Objects (overview)
 http://download.java.net/media/jai-imageio/javadoc/1.1/overview-summary.html
+
+Priceless resource hosting proprietary details
+http://www.na-mic.org
 
 Oracle: Multimedia DICOM Java API Reference
 https://docs.oracle.com/cd/E11882_01/appdev.112/e10781/toc.htm
@@ -57,4 +68,3 @@ http://dclunie.blogspot.com/2013/09/dicom-rendering-within-pre-html5.html
 
 American College of Radiologists: "Data Elements in DICOM headers"
 https://nrdr.acr.org/Portal/HELP/DIR/DataElementsInDIR-Header-SR.pdf
-
