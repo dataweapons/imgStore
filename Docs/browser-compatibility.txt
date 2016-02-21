@@ -1,6 +1,6 @@
-/* Guidance Concerning Browser-based Clients /*
+/* Guidance Concerning Web-based DICOM Clients | version 1 | proprietary, authorized use only /*
 
-* GENERAL THEORY *
+/* GENERAL THEORY /*
 [01] currently, compatibility is dictated by a browsers support for two specific functions related to the DICOM standard:
      + architecture must be, or have native support for, 32bit architectures,
      + support for JPEG2000a image compression,
@@ -14,12 +14,23 @@
      + PKCS12 client/server encryption.
 
 [03] to users, image compression applies algorithms to present the underlying image data in a way that minimizes the
-     resources necessary to stream and then view high quality greyscale images while not reducing the quality or accuracy of it.
+     resources necessary to stream and allows users to view high quality greyscale images while not reducing the quality
+     or accuracy of it, specifically as it pertains to the difference in pixel colorations in greyscale.
 
 [04] on the backend, JPEG2000 is fundamental to longterm archiving and data interchange.
 
 [05] DICOM software must be release with a DICOM Comformance Statement to ensure interoperability between different
-     vendor implementations of DICOM.  If this document references JPEG2000 
+     vendor implementations of DICOM.  If this document references JPEG2000 as all do, then JPEG2000 must be supported.
+     + while some use PNG, GIF, or even proprietary encoding, none of these implementations meet the standards for
+       healthcare delivery.
+
+     + the very nature of compression means that the user has to trust that the file-out accurately represents the
+       file-in.  With the infinite number of shades of grey that exists, the JPEG2000 algorithm is the only one to
+       compress data while not changing a single pixels color as perceivable by the human eye.
+
+     + therefore, a browser or software may appear to function, but the color differences that are minutely perceivable
+       by the human eye are not likely to result in the user questioning whether the software 'works'.  From the user
+       perspective, perhaps, but technically, no, it doesn't. It's also legally, not to mention ethically problematic.   
 
 [06] DICOM operates at a low-level, encoding metadata into DICOM files that dictate how it should be processed.  In 
      practice DICOM is implemented in Java for obvious reasons, chief among them is the separation of logic from the
