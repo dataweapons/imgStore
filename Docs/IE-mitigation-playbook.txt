@@ -8,6 +8,9 @@ https://nrdr.acr.org/Portal/HELP/DIR/DataElementsInDIR-Header-SR.pdf
 National Institutes of Health: "Imaging Quality Specifications"
 http://www.ncbi.nlm.nih.gov/pmc/pub/filespec-images/#img-quality
 
+Radiological Society of North America: "Distributing Medical Images with Internet Technologies"
+http://pubs.rsna.org/doi/pdf/10.1148/radiographics.20.2.g00mc18581
+
 IE Internals: "Compressing the Web"
 http://blogs.msdn.com/b/ieinternals/archive/2014/10/21/http-compression-optimize-file-formats-with-deflate.aspx
 
