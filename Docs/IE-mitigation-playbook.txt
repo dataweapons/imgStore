@@ -1,24 +1,60 @@
 
-David Cunie: "DICOM Rebdering In Pre-HTML5 Browsers"
-http://dclunie.blogspot.com/2013/09/dicom-rendering-within-pre-html5.html
-
-American College of Radiologists: "Data Elements in DICOM headers"
-https://nrdr.acr.org/Portal/HELP/DIR/DataElementsInDIR-Header-SR.pdf
-
+   ===================
+/* The Word From Above /*
+   ===================
 National Institutes of Health: "Imaging Quality Specifications"
 http://www.ncbi.nlm.nih.gov/pmc/pub/filespec-images/#img-quality
+
+National Institutes of Health: "Use of a Rich Internet Application Solution to Present Medical Images"
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3222552/
 
 Radiological Society of North America: "Distributing Medical Images with Internet Technologies"
 http://pubs.rsna.org/doi/pdf/10.1148/radiographics.20.2.g00mc18581
 
+   ===================
+/* IE Specific Hurdles /*
+   ===================
+Brian Green: "Web Access to DICOM Objects"
+http://userpages.umbc.edu/~bg2/WP/WADO.docx
+
+NEMA: WADO Implementations
+http://dicom.nema.org/dicom/minutes/wg-10/2004/2004-01-24/WADO-implementations-20040123.ppt
+
 IE Internals: "Compressing the Web"
 http://blogs.msdn.com/b/ieinternals/archive/2014/10/21/http-compression-optimize-file-formats-with-deflate.aspx
 
+"IE11 cross domain cache with XHR"
+http://stackoverflow.com/questions/26628317/ie11-cross-domain-cache-with-xhr
+
+"Problem retrieving a DICOM object via WADO using an XMLHttpRequest"
+https://groups.google.com/forum/m/#!topic/dcm4che/AuXaKyNFIco
+
+   ======================
+/* CCH Specific Resources /*
+   ======================
+Varian: DICOM Conformance Statements, ImageServer
+https://www.varian.com/oncology/service-education/interoperability/dicom-conformance-statements
+https://www.varian.com/sites/default/files/resource_attachments/TreatmentDaemon_88_89.pdf
+https://www.varian.com/sites/default/files/resource_attachments/Varian_TrueBeamImaging_v2.5_DICOMConformanceStatement.pdf
+
+GE: "Radiology PACS & RIS DICOM Conformance Statements"
+http://www3.gehealthcare.com/en/Products/Interoperability/DICOM/Radiology_PACS_and_RIS_Conformance_Statements
+
+   ===========================
+/* IMGSTORE Specific Resources /*
+   ===========================
 Oracle: Advanced Imaging Objects (overview)
 http://download.java.net/media/jai-imageio/javadoc/1.1/overview-summary.html
 
 Oracle: Multimedia DICOM Java API Reference
 https://docs.oracle.com/cd/E11882_01/appdev.112/e10781/toc.htm
 
-David Clu ie: excellent source for vendor specific implementation info.
+David Clunie: excellent source for vendor specific implementation info.
 http://www.dclunie.com/medical-image-faq/html/part8.html
+
+David Cunie: "DICOM Rebdering In Pre-HTML5 Browsers"
+http://dclunie.blogspot.com/2013/09/dicom-rendering-within-pre-html5.html
+
+American College of Radiologists: "Data Elements in DICOM headers"
+https://nrdr.acr.org/Portal/HELP/DIR/DataElementsInDIR-Header-SR.pdf
+
