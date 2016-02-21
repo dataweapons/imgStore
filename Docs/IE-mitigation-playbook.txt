@@ -29,6 +29,9 @@ http://stackoverflow.com/questions/26628317/ie11-cross-domain-cache-with-xhr
 "Problem retrieving a DICOM object via WADO using an XMLHttpRequest"
 https://groups.google.com/forum/m/#!topic/dcm4che/AuXaKyNFIco
 
+Fuji Synapse Datasheet
+https://www.fujifilmusa.com/products/medical/radiology/pacs/pdf/index/Synapse_4_2_Workstation_Data_Sheet.pdf
+
    ======================
 /* CCH Specific Resources /*
    ======================
