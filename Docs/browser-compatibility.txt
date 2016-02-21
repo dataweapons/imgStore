@@ -1,4 +1,9 @@
-/* Guidance Concerning Web-based DICOM Clients | version 1 | proprietary, authorized use only /*
+/* Guidance Concerning Web-based DICOM Clients /*
+
+   'When is a browser not just a browser?' and
+   'why are you running Java X?  Do you know How dangerous that is?'
+
+/* version 1 | proprietary, authorized use only /*
 
 /* GENERAL THEORY /*
 [01] currently, compatibility is dictated by a browsers support for these specific functions related to the DICOM standard:
