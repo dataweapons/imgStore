@@ -1,0 +1,18 @@
+
+David Cunie: "DICOM Rebdering In Pre-HTML5 Browsers"
+http://dclunie.blogspot.com/2013/09/dicom-rendering-within-pre-html5.html
+
+American College of Radiologists: "Data Elements in DICOM headers"
+https://nrdr.acr.org/Portal/HELP/DIR/DataElementsInDIR-Header-SR.pdf
+
+National Institutes of Health: "Imaging Quality Specifications"
+http://www.ncbi.nlm.nih.gov/pmc/pub/filespec-images/#img-quality
+
+IE Internals: "Compressing the Web"
+http://blogs.msdn.com/b/ieinternals/archive/2014/10/21/http-compression-optimize-file-formats-with-deflate.aspx
+
+Oracle: Advanced Imaging Objects (overview)
+http://download.java.net/media/jai-imageio/javadoc/1.1/overview-summary.html
+
+Oracle: Multimedia DICOM Java API Reference
+https://docs.oracle.com/cd/E11882_01/appdev.112/e10781/toc.htm
