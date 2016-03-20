@@ -1,0 +1,32 @@
+
+Store.StringAt.TmpPath = "/home/p3rtp/Decimal/PlanDocs/";
+    Store.At.TmpPath.AppendString = PlanInfo.LastName;
+    Store.At.TmpPath.AppendString = PlanInfo.MedicalRecordNumber;
+    Store.At.TmpPath.AppendString = "/"; // Include trailing / for later stuff
+
+// pdf file
+Store.StringAt.TmpName = PlanInfo.LastName;
+    Store.At.TmpName.AppendString = ",";
+    Store.At.TmpName.AppendString = PlanInfo.FirstName;
+    Store.At.TmpName.AppendString = ".pdf";
+
+Store.StringAt.TmpCmd = "tmpp=\""; 
+    Store.At.TmpCmd.AppendString = Store.StringAt.TmpPath;
+    Store.At.TmpCmd.AppendString = "\"; tmpn=\"";
+    Store.At.TmpCmd.AppendString = Store.StringAt.TmpName;
+    Store.At.TmpCmd.AppendString = "\"; tmpp=`echo $tmpp | sed 's/ /_/g'`; tmpn=`echo $tmpn | sed 's/ /_/g'`; cd $tmpp; cat *.ps > TempPostScript; ps2pdf -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode TempPostScript $tmpn; rm TempPostScript";
+///////////////////////////////////////////////////
+Store.StringAt.TmpCmd = "tmpp=\""; 
+    Store.At.TmpCmd.AppendString = Store.StringAt.TmpPath;
+    Store.At.TmpCmd.AppendString = "\"; tmpn=\"";
+    Store.At.TmpCmd.AppendString = Store.StringAt.TmpName;
+    Store.At.TmpCmd.AppendString = "\"; tmpp=`echo $tmpp | sed 's/ /_/g'`; tmpn=`echo $tmpn | sed 's/ /_/g'`; cd $tmpp; cat *.ps > TempPostScript; ps2pdf -dPDFSETTINGS=/prepress -dAutoRotatePages=/PageByPage TempPostScript $tmpn; rm TempPostScript"; 
+
+///////////////////////////////////////////////////
+SpawnCommand = Store.StringAt.TmpCmd;
+
+
+// Clear variables
+Store.StringAt.TmpPath = "";
+Store.StringAt.TmpName = "";
+Store.StringAt.TmpCmd = "";
